@@ -1,0 +1,63 @@
+[
+	{
+		"id": 1,
+		"date": "2024-05-10",
+		"name": "May 2024 Gannon Geomagnetic Storm",
+		"kidName": "The Great Solar Burp",
+		"danger": 5,
+		"explanation": "The Sun sent several big bursts of charged particles toward Earth. They made the sky glow with colorful auroras far from the poles.",
+		"funFact": "Did you know? People saw auroras as far south as Florida during this storm.",
+		"source": "NASA DONKI Database"
+	},
+	{
+		"id": 2,
+		"date": "2003-10-28",
+		"name": "October 2003 Halloween Solar Storms",
+		"kidName": "The Halloween Sun Surprise",
+		"danger": 5,
+		"explanation": "The Sun unleashed an enormous flare and a fast cloud of particles. The storm disturbed radio signals and made bright auroras appear in unusual places.",
+		"funFact": "Did you know? One flare was so powerful that scientists had to estimate its strength because their measuring instrument was overwhelmed.",
+		"source": "NASA DONKI Database"
+	},
+	{
+		"id": 3,
+		"date": "2015-03-17",
+		"name": "St. Patrick's Day Geomagnetic Storm",
+		"kidName": "The Emerald Sky Storm",
+		"danger": 4,
+		"explanation": "A cloud of material from the Sun reached Earth and stirred up our planet's magnetic surroundings. It sparked bright auroras and caused some radio and navigation hiccups.",
+		"funFact": "Did you know? This was the strongest geomagnetic storm in more than a decade at the time.",
+		"source": "NASA DONKI Database"
+	},
+	{
+		"id": 4,
+		"date": "2017-09-07",
+		"name": "September 2017 Solar Storm",
+		"kidName": "The Sun's Giant Flash",
+		"danger": 4,
+		"explanation": "The Sun fired off a powerful flare and sent a burst of particles into space. The activity caused short-lived radio trouble and helped paint the sky with auroras.",
+		"funFact": "Did you know? The flare came from a sunspot region that produced several strong flares in just a few days.",
+		"source": "NASA DONKI Database"
+	},
+	{
+		"id": 5,
+		"date": "2012-03-07",
+		"name": "March 2012 Solar Storm",
+		"kidName": "The Double Sunburst",
+		"danger": 4,
+		"explanation": "Two powerful solar flares erupted close together, sending fast-moving particles away from the Sun. Earth felt a strong space-weather disturbance when some of that material arrived.",
+		"funFact": "Did you know? The flares came from one busy sunspot region that kept producing space weather for days.",
+		"source": "NASA DONKI Database"
+	},
+	{
+		"id": 6,
+		"date": "2023-03-23",
+		"name": "March 2023 Geomagnetic Storm",
+		"kidName": "The Sneaky Aurora Storm",
+		"danger": 4,
+		"explanation": "A fast-moving cloud from the Sun reached Earth and stirred up its magnetic field. The storm made auroras visible much farther from the poles than usual.",
+		"funFact": "Did you know? Some people in the southern United States spotted auroras during this storm.",
+		"source": "NASA DONKI Database"
+	}
+]
+

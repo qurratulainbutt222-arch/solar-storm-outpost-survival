@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#101a3a">
+	<meta name="description" content="Make smart choices and help your crew survive a solar storm in this space survival game for young explorers.">
+	<title>Solar Storm Outpost Survival</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to game</a>
+	<header class="site-header">
+		<div class="header-title">
+			<p class="eyebrow">A space survival mission</p>
+			<h1>Solar Storm Outpost Survival</h1>
+		</div>
+		<div class="header-badges" aria-label="Mission information">
+			<span class="badge sol-badge" id="sol-counter" aria-label="Current sol">Sol: 1</span>
+			<span class="badge nasa-badge">Powered by NASA DONKI Data</span>
+		</div>
+	</header>
+
+	<main id="main-content" class="game-layout">
+		<div class="mission-column">
+			<section class="panel dashboard" aria-labelledby="dashboard-heading">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">Mission control</p>
+						<h2 id="dashboard-heading">Outpost Status</h2>
+					</div>
+					<span class="status-pill" id="mission-status">All systems ready</span>
+				</div>
+
+				<div class="resource-list">
+					<div class="resource" data-resource="power">
+						<div class="resource-label"><label for="power-level">Power Level</label><span id="power-value">100%</span></div>
+						<progress id="power-level" max="100" value="100" aria-label="Power level: 100 percent">100%</progress>
+					</div>
+					<div class="resource" data-resource="oxygen">
+						<div class="resource-label"><label for="oxygen-level">Oxygen Level</label><span id="oxygen-value">100%</span></div>
+						<progress id="oxygen-level" max="100" value="100" aria-label="Oxygen level: 100 percent">100%</progress>
+					</div>
+					<div class="resource" data-resource="health">
+						<div class="resource-label"><label for="health-level">Outpost Health / Shielding</label><span id="health-value">100%</span></div>
+						<progress id="health-level" max="100" value="100" aria-label="Outpost health and shielding: 100 percent">100%</progress>
+					</div>
+				</div>
+			</section>
+
+			<section class="panel alert-panel" aria-labelledby="alert-heading" aria-live="polite">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">Space weather alert</p>
+						<h2 id="alert-heading">Storm Watch</h2>
+					</div>
+					<span class="alert-icon" aria-hidden="true">☀</span>
+				</div>
+				<h3 id="event-title">Checking for solar activity…</h3>
+				<p class="danger-rating"><strong>Danger rating:</strong> <span id="danger-rating" aria-label="Rating pending">☆☆☆☆☆</span></p>
+				<p id="event-explanation">Our space-weather team is checking NASA DONKI data. Stay ready, Explorer—the Sun can send bursts of energy into space!</p>
+				<p class="data-note">NASA DONKI (Database Of Notifications, Knowledge, Information) shares space-weather observations.</p>
+			</section>
+
+			<section class="panel decision-panel" aria-labelledby="decision-heading">
+				<p class="eyebrow">Choose your plan</p>
+				<h2 id="decision-heading">How will you protect the outpost?</h2>
+				<p>Think about your resources, then make a choice for this sol.</p>
+				<div class="action-buttons">
+					<button class="action-button shields-on" id="shields-on" type="button" data-action="shields-on">
+						<span class="button-title">Shields ON</span>
+						<span class="button-detail">Protect health · Cost power</span>
+					</button>
+					<button class="action-button shields-off" id="shields-off" type="button" data-action="shields-off">
+						<span class="button-title">Shields OFF</span>
+						<span class="button-detail">Save power · Risk health</span>
+					</button>
+				</div>
+				<p class="choice-feedback" id="choice-feedback" role="status" aria-live="polite"></p>
+			</section>
+
+			<section class="panel report-panel" id="failure-report" aria-labelledby="failure-heading" hidden>
+				<p class="eyebrow">Mission debrief</p>
+				<h2 id="failure-heading">Why Did I Fail?</h2>
+				<p id="failure-message">Your mission has ended because an outpost resource ran out.</p>
+				<p id="failure-tip">Every mission teaches us something. Review your resources and try a new strategy!</p>
+				<button class="action-button restart-button" id="restart-game" type="button">Start a new mission</button>
+			</section>
+		</div>
+
+		<aside class="panel glossary" aria-labelledby="glossary-heading">
+			<p class="eyebrow">Quick reference</p>
+			<h2 id="glossary-heading">Space Explorer Dictionary</h2>
+			<dl>
+				<div class="glossary-entry">
+					<dt>Sol</dt>
+					<dd>One day on Mars. It is a little longer than a day on Earth.</dd>
+				</div>
+				<div class="glossary-entry">
+					<dt>Radiation Dose</dt>
+					<dd>A way to measure how much energy from radiation a person or place receives.</dd>
+				</div>
+				<div class="glossary-entry">
+					<dt>Microgravity</dt>
+					<dd>A condition where things seem almost weightless and can float around.</dd>
+				</div>
+				<div class="glossary-entry">
+					<dt>Solar Flare</dt>
+					<dd>A sudden, powerful burst of energy from the Sun.</dd>
+				</div>
+			</dl>
+			<p class="glossary-tip">Explorer tip: Learning about space weather helps astronauts stay safer!</p>
+		</aside>
+	</main>
+
+	<footer class="site-footer">
+		<p>Keep curious, make a plan, and look after your crew.</p>
+	</footer>
+	<script src="game.js"></script>
+</body>
+</html>
